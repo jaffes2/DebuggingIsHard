@@ -4,6 +4,18 @@ body{
 	font-style: thin;
 }
 
+table{
+	padding: 5px;
+	border-collapse: collapse;
+    border-spacing: 0;
+    height: 740px;
+    width: 100%;
+}
+
+td{
+	width: 50%;
+}
+
 h1{
 	font-size: 45px;
 	padding: 7px;
@@ -27,8 +39,40 @@ h3{
 	color: green;
 }
 
-table{
-	padding: 5px;
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 200px) and (max-device-width: 1000px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 0; 
+		width: 100%;
+		text-align: left;
+		min-height: 150px;
+
+	}
 }
 
 p{
