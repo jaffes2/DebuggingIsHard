@@ -13,9 +13,24 @@ table{
     border-radius: 5px;
 }
 
+.poem{
+	padding: 5px;
+}
+
 td{
 	width: 50%;
 	border-radius: 10px;
+	padding-right: 10px;
+}
+
+ul
+{
+    list-style-type: none;
+    color: white;
+}
+
+.list{
+	color: white;
 }
 
 h1{
@@ -26,7 +41,7 @@ h1{
 }
 
 h2{
-	font-size: 30px;
+	font-size: 20px;
 }
 
 h3{
@@ -64,7 +79,7 @@ only screen and (max-width: 760px),
 	}
 	
 	tr { 
-		border: 1px solid #ccc;
+		
 		height: 100vh;
 		width: 100vw;
 	}
