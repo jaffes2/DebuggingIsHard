@@ -1,0 +1,58 @@
+body{
+	color: #00b7be;
+	font-family: Courier;
+	font-style: thin;
+}
+
+h1{
+	font-size: 45px;
+	padding: 7px;
+	padding-bottom: 0px;
+	padding-right: 20px;
+}
+
+h2{
+	font-size: 30px;
+}
+
+h3{
+	padding-left: 20px;
+}
+
+.left{
+	color: white;
+}
+
+.print{
+	color: green;
+}
+
+table{
+	padding: 5px;
+}
+
+p{
+	padding-top: 0px;
+	font-size: 20px;
+}
+
+.copyright{
+	color: #00b7be;
+	padding: 20px;
+}
+
+h3{
+	padding: 0px 0px 0px 0px;
+}
+
+.caption{
+	padding-right: 20px;
+}
+
+a:link{
+	text-decoration: none;
+}
+
+.share{
+	padding-left: 20px;
+}
