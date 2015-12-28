@@ -8,12 +8,14 @@ table{
 	padding: 5px;
 	border-collapse: collapse;
     border-spacing: 0;
-    height: 740px;
+    height: 96vh;
     width: 100%;
+    border-radius: 5px;
 }
 
 td{
 	width: 50%;
+	border-radius: 10px;
 }
 
 h1{
@@ -28,7 +30,7 @@ h2{
 }
 
 h3{
-	padding-left: 20px;
+	padding-left: 30px;
 }
 
 .left{
@@ -51,6 +53,7 @@ only screen and (max-width: 760px),
 	/* Force table to not be like tables anymore */
 	table, thead, tbody, th, td, tr { 
 		display: block; 
+		width: 100vh;
 	}
 	
 	/* Hide table headers (but not display: none;, for accessibility) */
@@ -60,7 +63,9 @@ only screen and (max-width: 760px),
 		left: -9999px;
 	}
 	
-	tr { border: 1px solid #ccc; }
+	tr { 
+		border: 1px solid #ccc;
+		height: 100vh;}
 	
 	td { 
 		/* Behave  like a "row" */
@@ -68,9 +73,20 @@ only screen and (max-width: 760px),
 		border-bottom: 1px solid #eee; 
 		position: relative;
 		padding-left: 0; 
-		width: 100%;
-		text-align: left;
-		min-height: 150px;
+		width: 100vh;
+		text-align: center;
+		min-height: 50vh;
+		vertical-align: middle;
+	}
+
+	.left{
+		padding-top: 60vh;
+		vertical-align: middle;
+		height: 70vh;
+		position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translateX(-50%) translateY(-50%);
 
 	}
 }
